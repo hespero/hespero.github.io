@@ -142,11 +142,12 @@ nav a:hover {
     }
 
     .logo {
+        font-family: Lombok-Font;
+        text-shadow: 1px 1px 5px rgb(0, 0, 0);
         white-space: nowrap;
         padding-left: 50px;
         padding-right: 50px;
-        color: white;
-        text-shadow: 1px 1px 5px rgb(0, 86, 24);
+        color: black;
     }
 
     nav {
