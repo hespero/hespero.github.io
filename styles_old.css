@@ -5,52 +5,31 @@
     src: url(Lombok.ttf);
 }
 
-:root {
-    --background: rgb(54, 54, 54);
+h1 {
+    margin-left: 20px;
 }
 
-*, *::before, *::after {
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-}
-
-.footer {
-    color: black;
-    height: 30px;
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
     width: 100%;
-}
-
-.date {
-  text-decoration: underline !important;
-}
-    
-.link:hover {
-transform: scale(1.04);
-color: rgb(255, 0, 0);
-font-weight: bold;
 }
 
 /* NavBar */
 body {
     margin: 0;
-    background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
 
 .content {
-    background-image: url(background.jpeg);
-    background-color: rgba(51, 51, 51, 0.758);
-    background-blend-mode: multiply;
+    background-color: rgb(42, 42, 42);
     background-size: cover;
     height: auto;
     display: flex;
     flex-direction: column;
-}
-
-h {
-    color: white;
 }
 
 .writing { 
@@ -63,10 +42,7 @@ h {
 
 .link {
     padding: 0, 0, 0, 0;
-    color: rgb(224, 0, 0);
-    transition: transform .2s ease-in-out;
-    display: inline-block;
-    font-weight: bold;
+    color: rgb(255, 43, 43);
 }
 
 /* navigation style starts here */
@@ -82,7 +58,6 @@ header {
 .logo {
     font-family: Lombok-Font;
     text-shadow: 1px 1px 5px rgb(0, 0, 0);
-    color: white;
     }
 
 .nav-toggle {
@@ -103,7 +78,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: white;
+    background: rgb(0, 0, 0);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -148,7 +123,7 @@ nav li {
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.2rem;
     opacity: 0;
@@ -156,7 +131,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 .nav-toggle:checked ~ nav{
@@ -179,11 +154,12 @@ nav a:hover {
     }
 
     .logo {
+        font-family: Lombok-Font;
+        text-shadow: 1px 1px 5px rgb(0, 0, 0);
         white-space: nowrap;
         padding-left: 50px;
         padding-right: 50px;
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 5px rgb(0, 86, 24);
+        color: black;
     }
 
     nav {
@@ -212,7 +188,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: rgb(255, 255, 255);
+        background: black;
         position: absolute;
         top: -.75em;
         left: 0;
@@ -223,77 +199,5 @@ nav a:hover {
 
     nav a:hover::before {
         transform: scale(1, 1);
-    }
-}/* Contact Form */
-
-.wrapper {
-    position: flex;
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 20%;
-}
-
-.contact-form {
-    max-width: 550px;
-    margin: 0 auto;
-    background-color: rgba(84, 169, 117, 0.8);
-    padding: 30px;
-    border-radius: 5px;
-    display: flex;
-    box-shadow: 0 0 10px rgb(0, 195, 75);
-}
-
-.input-fields {
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-}
-
-.input-fields,
-.msg {
-    width: 48%;
-}
-
-.input-fields .input,
-.msg textarea {
-    margin: 10px 0;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.616);
-    padding: 10px;
-    color: rgba(0, 0, 0, 0.616);
-    width: 100%;
-}
-
-.msg textarea {
-    height: 200px;
-}
-
-::placeholder {
-    color: black;
-}
-
-.btn {
-    background:rgb(0, 255, 98);
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(0, 141, 54);
-}
-
-@media screen and (max-width: 600px) {
-    .contact-form {
-        flex-direction: column;
-    }
-
-    .msg textarea {
-        height: 80px;
-    }
-
-    .input-fields,
-    .msg {
-        width: 100%;
     }
 }
